@@ -77,7 +77,8 @@ jobs:
       working-directory: ./openwrt
       run: |
         git clone https://github.com/xiaorouji/openwrt-package.git package/lienol
-        git clone "your_github_link" package/"your_folder_name"      
+        git clone "your_github_link" package/"your_folder_name"    
+        git clone https://github.com/pymumu/luci-app-smartdns.git
 
     - name: Configuration Customization - Build_x86_64
       env:
